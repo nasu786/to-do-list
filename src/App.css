@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Merienda&family=Raleway:wght@300&display=swap');
+
+body {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(to top left, #fdfc47, #24fe41);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 400px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  outline: none;
+  transition: all .2s ease-out;
+}
+
+input:hover {
+  transform: scale(1.015);
+  transition: all .2s ease-out;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.addButton {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+}
+
+.addButton:hover {
+  transform: scale(1.015);
+  transition: all .2s ease-out;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+li {
+  height: auto;
+  width: 460px;
+  background-color: honeydew;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  margin-top: 10px;
+  transition: all .2s ease-out;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+
+li:hover {
+  transform: scale(1.015);
+  height: 80px;
+  
+}
+
+.task {
+  width: 380px;
+  height: 70px;  
+  display: flex;
+  margin-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-items: center;
+  transition: all .15s ease-out;
+}
+
+.task:hover {
+  white-space: normal;
+  overflow-y: scroll;
+  height: 70px;
+}
+.task::-webkit-scrollbar{
+  width: 5px;  
+}
+
+.task::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #24fe41;
+  height: 10px;
+}
+
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.delete-btn:hover {
+  transform: scale(1.035);
+  transition: all .2s ease-out;
+  box-shadow: 0px 10px 13px -5px #ff6161;
+
+}
+
