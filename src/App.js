@@ -4,14 +4,14 @@ import deleteicon from './delete_icon.svg';
 import notesicon from './Notes-Icon.svg';
 
 
-const App = ()=> {
+const App = () => {
 
   const [textInput, setTextInput] = useState('');
   const [items, setItems] = useState([]);
   const [ids, setids] = useState(0);
 
   //To add new task
-  const addNewItem = (e)=> {
+  const addNewItem = (e) => {
     e.preventDefault();
 
     if (textInput != '') {
@@ -29,7 +29,7 @@ const App = ()=> {
   }
 
   //To delete task
-  const deleteItem = (id)=> {
+  const deleteItem = (id) => {
     const updateditems = items.filter((item) => item.id !== id);
     setItems(updateditems);
   }
@@ -41,11 +41,11 @@ const App = ()=> {
         <input type="text" placeholder='Add your task' onChange={(e) => setTextInput(e.target.value)} value={textInput} />
         <button type='submit' className='addButton'>+</button>
       </form>
-      <div>
+      <div className='list'>
         {items.map((item) => (
           <li key={item.id} >
             <img src={notesicon} />
-            <div className='task'>{item.value}</div>
+            <p className='task'>{item.value}</p>
             <button className='delete-btn' onClick={() => deleteItem(item.id)}>
               <img src={deleteicon} />
             </button>
